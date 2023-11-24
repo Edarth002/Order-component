@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Order Component</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        body {
+            background-image: url(./images/pattern-background-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+</style>
+
+<body>
+    <div class=" mb-4 mx-auto bg-white rounded-2xl md:w-4/12 w-10/12 shadow-blue-800 shadow-md
+    min-w-small  md:mt-10 mt-20">
+        <div>
+            <img src="./images/illustration-hero.svg" alt="illustration-hero" class="rounded-t-2xl my-2 mx-auto w-full">
+        </div>
+        <div class="mt-1">
+            <h2 class="text-center text-blue-950 font-bold text-3xl mt-4">Order Summary</h2>
+            <p class="mt-3 max-w-xs text-base text-center mx-auto text-slate-500">You should listen to millions of
+                songs, audiobooks, and podcasts on any device <br>anywhere you
+                like
+            </p>
+        </div>
+        <div class="justify-evenly flex items-center bg-slate-100 rounded-md w-5/6 mx-auto px-2 py-3 mt-5">
+            <img src="./images/icon-music.svg" alt="icon" class="mr-2">
+            <div class="flex-col ">
+                <p class="font-extrabold">Annual Plan</p>
+                <p class="text-slate-500 font-medium">$59.99/year</p>
+            </div>
+            <div class="ml-14">
+                <a href="#"
+                    class="underline text-violet-800 font-bold hover:text-violet-600 hover:no-underline cursor-pointer">Change</a>
+            </div>
+        </div>
+        <div
+            class="mx-auto items-center mt-7 bg-blue-800 rounded-md w-5/6 hover:bg-violet-800 px-2 py-2 shadow-purple-800 shadow-md">
+            <p class="text-white font-bold text-center cursor-pointer">proceed to payment</p>
+        </div>
+        <div class="mt-3 py-5">
+            <p class="text-slate-500 hover:text-slate-800 text-center cursor-pointer font-medium">cancel order</p>
+        </div>
+    </div>
+</body>
+
+</html>
